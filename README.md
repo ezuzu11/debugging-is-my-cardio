@@ -120,15 +120,3 @@ FROM employees;
 ![Data Distribution Overview](/screenshots/6.jpeg)
 
 This visualization provides an overview of the sample employee data used in these examples, showing the distribution of salaries across departments.
-
-## Getting Started
-
-1. Create the employees table using the provided SQL script
-2. Insert the sample data
-3. Run the example queries to see window functions in action
-
-## Notes
-
-- These examples use Oracle SQL syntax
-- Window functions are part of the SQL:2003 standard and are available in most modern RDBMS
-- The PARTITION BY clause is optional - if omitted, the window function treats the entire result set as a single partition
