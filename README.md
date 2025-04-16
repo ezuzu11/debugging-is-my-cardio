@@ -46,7 +46,7 @@ FROM employees;
 
 ### 2. RANK and DENSE_RANK Functions
 
-![RANK and DENSE_RANK Functions](image2.png)
+![RANK and DENSE_RANK Functions](/screenshots/2.jpeg)
 
 These functions assign rankings to rows within a partition. RANK leaves gaps in ranking when there are ties, while DENSE_RANK assigns consecutive ranks.
 
@@ -63,7 +63,7 @@ FROM employees;
 
 ### 3. Top N Per Group
 
-![Top N Per Group](image3.png)
+![Top N Per Group](/screenshots/3.jpeg)
 
 This query finds the top 3 highest-paid employees in each department using the RANK function.
 
@@ -80,7 +80,7 @@ WHERE rank_ <= 3;
 
 ### 4. ROW_NUMBER Function
 
-![ROW_NUMBER Function](image4.png)
+![ROW_NUMBER Function](/screenshots/4.jpeg)
 
 ROW_NUMBER assigns unique sequential integers to rows within a partition. This example shows how to find the two earliest employees who joined each department.
 
@@ -100,7 +100,7 @@ WHERE rn <= 2;
 
 ### 5. Window Aggregate Functions
 
-![Window Aggregate Functions](image5.png)
+![Window Aggregate Functions](/screenshots/5.jpeg)
 
 Window functions can perform aggregations without grouping rows together. This query shows each employee's salary alongside the maximum salary in their department and across the entire company.
 
@@ -117,7 +117,7 @@ FROM employees;
 
 ### 6. Data Distribution Overview
 
-![Data Distribution Overview](image6.png)
+![Data Distribution Overview](/screenshots/6.jpeg)
 
 This visualization provides an overview of the sample employee data used in these examples, showing the distribution of salaries across departments.
 
