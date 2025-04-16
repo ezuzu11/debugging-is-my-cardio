@@ -1,88 +1,312 @@
-
-CREATE TABLE employees (
-    id NUMBER PRIMARY KEY,
-    name VARCHAR2(50),
-    department VARCHAR2(50),
-    salary NUMBER,
-    join_date DATE
+create table employees (
+   id         number primary key,
+   name       varchar2(50),
+   department varchar2(50),
+   salary     number,
+   join_date  date
 );
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (1, 'Alice', 'Marketing', 7500, TO_DATE('2022-09-16', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (2, 'Bob', 'IT', 5500, TO_DATE('2023-08-12', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (3, 'Charlie', 'Sales', 6500, TO_DATE('2019-08-16', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (4, 'David', 'IT', 5000, TO_DATE('2021-05-11', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (5, 'Eve', 'Sales', 5000, TO_DATE('2019-06-13', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (6, 'Frank', 'Marketing', 8000, TO_DATE('2023-06-15', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (7, 'Grace', 'Marketing', 6500, TO_DATE('2020-01-28', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (8, 'Heidi', 'HR', 6000, TO_DATE('2021-10-12', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (9, 'Ivan', 'Sales', 4500, TO_DATE('2018-12-14', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (10, 'Judy', 'Sales', 5000, TO_DATE('2023-06-02', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (11, 'Karl', 'Sales', 4500, TO_DATE('2022-04-10', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, s4alary, join_date) VALUES (12, 'Laura', 'IT', 5000, TO_DATE('2019-10-14', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (13, 'Mallory', 'HR', 6500, TO_DATE('2023-02-13', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (14, 'Niaj', 'HR', 5500, TO_DATE('2018-12-17', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (15, 'Olivia', 'Sales', 6500, TO_DATE('2022-01-25', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (16, 'Peggy', 'HR', 6000, TO_DATE('2018-02-12', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (17, 'Quentin', 'IT', 5500, TO_DATE('2021-07-19', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (18, 'Ruth', 'IT', 6500, TO_DATE('2021-12-08', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (19, 'Sybil', 'Marketing', 4500, TO_DATE('2023-08-25', 'YYYY-MM-DD'));
-INSERT INTO employees (id, name, department, salary, join_date) VALUES (20, 'Trent', 'IT', 6500, TO_DATE('2021-01-21', 'YYYY-MM-DD'));
+-- Inserting sample datas to tables.
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 1,
+           'Alice',
+           'Marketing',
+           7500,
+           to_date('2022-09-16','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 2,
+           'Bob',
+           'IT',
+           5500,
+           to_date('2023-08-12','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 3,
+           'Charlie',
+           'Sales',
+           6500,
+           to_date('2019-08-16','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 4,
+           'David',
+           'IT',
+           5000,
+           to_date('2021-05-11','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 5,
+           'Eve',
+           'Sales',
+           5000,
+           to_date('2019-06-13','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 6,
+           'Frank',
+           'Marketing',
+           8000,
+           to_date('2023-06-15','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 7,
+           'Grace',
+           'Marketing',
+           6500,
+           to_date('2020-01-28','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 8,
+           'Heidi',
+           'HR',
+           6000,
+           to_date('2021-10-12','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 9,
+           'Ivan',
+           'Sales',
+           4500,
+           to_date('2018-12-14','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 10,
+           'Judy',
+           'Sales',
+           5000,
+           to_date('2023-06-02','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 11,
+           'Karl',
+           'Sales',
+           4500,
+           to_date('2022-04-10','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   s4alary,
+   join_date
+) values ( 12,
+           'Laura',
+           'IT',
+           5000,
+           to_date('2019-10-14','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 13,
+           'Mallory',
+           'HR',
+           6500,
+           to_date('2023-02-13','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 14,
+           'Niaj',
+           'HR',
+           5500,
+           to_date('2018-12-17','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 15,
+           'Olivia',
+           'Sales',
+           6500,
+           to_date('2022-01-25','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 16,
+           'Peggy',
+           'HR',
+           6000,
+           to_date('2018-02-12','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 17,
+           'Quentin',
+           'IT',
+           5500,
+           to_date('2021-07-19','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 18,
+           'Ruth',
+           'IT',
+           6500,
+           to_date('2021-12-08','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 19,
+           'Sybil',
+           'Marketing',
+           4500,
+           to_date('2023-08-25','YYYY-MM-DD') );
+insert into employees (
+   id,
+   name,
+   department,
+   salary,
+   join_date
+) values ( 20,
+           'Trent',
+           'IT',
+           6500,
+           to_date('2021-01-21','YYYY-MM-DD') );
 
 
-select * from employees;
+select *
+  from employees;
 
-SELECT 
-    id,
-    name,
-    department,
-    salary,
-    LAG(salary) OVER (PARTITION BY department ORDER BY salary) AS prev_salary,
-    LEAD(salary) OVER (PARTITION BY department ORDER BY salary) AS next_salary,
-    CASE 
-        WHEN salary > LAG(salary) OVER (PARTITION BY department ORDER BY salary) THEN 'HIGHER'
-        WHEN salary < LAG(salary) OVER (PARTITION BY department ORDER BY salary) THEN 'LOWER'
-        ELSE 'EQUAL'
-    END AS compare_with_prev
-FROM employees;
+select id,
+       name,
+       department,
+       salary,
+       lag(salary)
+       over(partition by department
+            order by salary
+       ) as prev_salary,
+       lead(salary)
+       over(partition by department
+            order by salary
+       ) as next_salary,
+       case
+          when salary > lag(salary)
+                        over(partition by department
+                             order by salary
+          ) then
+             'HIGHER'
+          when salary < lag(salary)
+                        over(partition by department
+                             order by salary
+          ) then
+             'LOWER'
+          else
+             'EQUAL'
+       end as compare_with_prev
+  from employees;
 
-SELECT 
-    id,
-    name,
-    department,
-    salary,
-    RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS rank_,
-    DENSE_RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dense_rank_
-FROM employees;
+select id,
+       name,
+       department,
+       salary,
+       rank()
+       over(partition by department
+            order by salary desc
+       ) as rank_,
+       dense_rank()
+       over(partition by department
+            order by salary desc
+       ) as dense_rank_
+  from employees;
 
-SELECT *
-FROM (
-    SELECT 
-        id, name, department, salary,
-        RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS rank_
-    FROM employees
+select *
+  from (
+   select id,
+          name,
+          department,
+          salary,
+          rank()
+          over(partition by department
+               order by salary desc
+          ) as rank_
+     from employees
 )
-WHERE rank_ <= 3;
+ where rank_ <= 3;
 
-SELECT *
-FROM (
-    SELECT 
-        id,
-        name,
-        department,
-        join_date,
-        ROW_NUMBER() OVER (PARTITION BY department ORDER BY join_date) AS rn
-    FROM employees
+select *
+  from (
+   select id,
+          name,
+          department,
+          join_date,
+          row_number()
+          over(partition by department
+               order by join_date
+          ) as rn
+     from employees
 )
-WHERE rn <= 2;
+ where rn <= 2;
 
-SELECT 
-    id,
-    name,
-    department,
-    salary,
-    MAX(salary) OVER (PARTITION BY department) AS dept_max_salary,
-    MAX(salary) OVER () AS overall_max_salary
-FROM employees;
-
-
-
-
+select id,
+       name,
+       department,
+       salary,
+       max(salary)
+       over(partition by department) as dept_max_salary,
+       max(salary)
+       over() as overall_max_salary
+  from employees;
