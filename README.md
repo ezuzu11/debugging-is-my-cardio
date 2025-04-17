@@ -61,7 +61,7 @@ SELECT
 FROM employees;
 ```
 
-### 3. Top N Per Group
+### 3. Top 3 Per Group
 
 ![Top N Per Group](/screenshots/3.jpeg)
 
