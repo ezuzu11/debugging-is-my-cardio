@@ -78,7 +78,7 @@ FROM (
 WHERE rank_ <= 3;
 ```
 
-### 4. ROW_NUMBER Function
+### 4. Finding the Earliest Records
 
 ![ROW_NUMBER Function](/screenshots/4.jpeg)
 
