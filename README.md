@@ -1,3 +1,7 @@
+## Team Members
+- Ezana Mussie ~ 26339
+- Ariane Gatesi ~ 25917
+
 # SQL Window Functions Tutorial
 
 This repository contains examples and explanations of SQL window functions using Oracle SQL syntax. Window functions are powerful SQL features that perform calculations across a set of table rows related to the current row.
